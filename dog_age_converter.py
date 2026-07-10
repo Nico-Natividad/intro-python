@@ -1,3 +1,8 @@
+print("=================================================")
+print("----- Welcome to the Dog Age Converter ----")
+print("=================================================")
+
+
 dogagehum = int(input("Enter your dog's age in human years: "))
 # I named the variable dogagehum to represent the dog's age in human years. I used the int() function to convert the user's input into an integer, as ages are typically represented as whole numbers. This allows for accurate calculations when converting to dog years.
 
