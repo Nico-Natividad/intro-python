@@ -1,3 +1,4 @@
+from catalog import catalog
 cart = []
 
 
@@ -14,7 +15,7 @@ def menu():
 
     print("q to quit")
 
-def catalog():
+def print_catalog():
     header("Our catalog")
     for prod in catalog:
         print(f'| {prod["id"]} | {prod["title"]} | {prod["price"]}')
@@ -60,16 +61,16 @@ def search_product():
 
 print("========================================")
 
-# VIEW CART using for loop
+
 print("VIEW CART")
 
-def view_cart():
+def view_catalog():
     header("Your Cart")
 
     if not cart:
         print("Your cart is empty.")
     else:
-        # Loop through every product in the cart
+    
         for prod in cart:
             print(f"| {prod['id']} | {prod['title'].ljust(15)} | ${prod['price']:.2f} |")
 
@@ -85,16 +86,17 @@ while option != "q" and option != "Q":
     option = input("Choose an option")
     if option =="1":
         print("menu")
-        catalog()
+        print_catalog()
     elif option == "2":
         print("Search product")
         search_product()
     elif option =="3":
         print("View cart")
-        view_cart()
+        view_catalog()
     elif option =="q" and option =="Q":
-        
+
         print("good bye")
+
         break
     else:
         print("error")

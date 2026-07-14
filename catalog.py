@@ -1,17 +1,16 @@
 catalog = [
     {
         "id":1,
-        "title": Keyboard,
+        "title": "Keyboard",  
         "price": 23
     },
        {
         "id":2,
-        "title": mouse,
-        "price": 24
+        "title": "mouse",     
     },
        {
         "id":3,
-        "title": charger,
+        "title": "charger",  
         "price": 25
     }
 ]
